@@ -9,6 +9,7 @@
 	var $window = $(window),
 		$body = $('body'),
 		$header = $('#header'),
+		$header_div = $('#header-div')
 		$footer = $('#footer'),
 		$main = $('#main'),
 		settings = {
@@ -56,7 +57,7 @@
 		});
 
 		breakpoints.on('>medium', function() {
-			$footer.appendTo($header);
+			$footer.insertAfter($header);
 		});
 
 	// Header.
